@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+    <style>
+
+        .carousel {
+            min-height: 50vh;
+            width: 60vw;
+        }
+
+        .carousel div img {
+            height: 400px;
+            width: 370px;
+            object-fit: cover;
+        }
+
+        .carousel .second-slider {
+            margin-top: 100px;
+        }
+
+        .carousel .second-slider img {
+            height: 300px;
+            margin-left: 1rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel">
+        <div>
+            <img src="https://www.tuacasa.com.br/wp-content/uploads/2018/09/como-cuidar-de-tulipas-1.jpg" alt="">
+        </div>
+        <div class="second-slider">
+            <img src="https://conexaoplaneta.com.br/wp-content/uploads/2018/06/tulipas-holandesas-que-na-verdade-sao-turcas-3-conexao-planeta-800x445.jpg" alt="">
+        </div>
+        <div>
+            <img src="https://www.significados.com.br/foto/tulipas-significados.jpg" alt="">
+        </div>
+        <div class="second-slider">
+            <img src="https://conexaoplaneta.com.br/wp-content/uploads/2018/06/tulipas-holandesas-que-na-verdade-sao-turcas-3-conexao-planeta-800x445.jpg" alt="">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
